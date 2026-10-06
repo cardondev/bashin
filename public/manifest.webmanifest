@@ -1,0 +1,12 @@
+{
+  "name": "Bashin — Bash Prompt Generator",
+  "short_name": "Bashin",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1e1e2e",
+  "theme_color": "#1e1e2e",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "./apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

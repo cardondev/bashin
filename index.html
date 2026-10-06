@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="mocha" data-accent="mauve">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bashin — Bash Prompt Generator</title>
+    <meta
+      name="description"
+      content="Design your bash or zsh prompt with a live terminal preview: drag-and-drop elements, git status, powerline segments, 20+ themes, and fast, safe generated code. Catppuccin by default."
+    />
+    <meta name="theme-color" content="#1e1e2e" />
+    <meta property="og:title" content="Bashin — Bash Prompt Generator" />
+    <meta property="og:description" content="Build the prompt you look at all day. Live preview, real-shell verified output, Catppuccin by default." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cardondev.github.io/bashin/" />
+    <meta property="og:image" content="https://cardondev.github.io/bashin/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script>
+      // Apply the saved theme before first paint (no flash of the wrong flavor).
+      try {
+        var s = JSON.parse(localStorage.getItem('bashin:ui') || '{}').state || {};
+        var d = document.documentElement;
+        if (s.flavor) d.dataset.theme = s.flavor;
+        if (s.accent) d.dataset.accent = s.accent;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Bashin needs JavaScript to build prompts.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
