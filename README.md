@@ -41,7 +41,6 @@ Everything runs in the browser; nothing is uploaded.
 
 ```
 .
-├── .github/workflows/deploy.yml   builds the site and publishes it to GitHub Pages
 ├── index.html                     page shell, metadata and theme bootstrap
 ├── public/                        favicon, touch icon, social image, web manifest
 ├── src/
