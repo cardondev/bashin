@@ -52,7 +52,6 @@ Everything runs in the browser; nothing is uploaded.
 │   ├── assets/fonts/              Nerd Fonts symbol subset and its license
 │   ├── index.css                  Tailwind setup and the Catppuccin theme
 │   └── main.tsx                   entry point
-├── DEPLOY.md                      how to publish the site
 ├── package.json · package-lock.json
 ├── tsconfig*.json · vite.config.ts
 └── LICENSE
